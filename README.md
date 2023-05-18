@@ -1,3 +1,3 @@
-# DuDGAN
+# DuDGAN: Improving Class-Conditional GANs via Dual-Diffusion
 
 coming soon...
