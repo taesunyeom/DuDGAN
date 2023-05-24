@@ -2,4 +2,4 @@
 
 coming soon...
 
-<img width="80%" src="https://github.com/taesunyeom/DuDGAN/assets/102474982/236dba6a-0124-4368-a07e-79060d6afc83"/>
+<img src="https://github.com/taesunyeom/DuDGAN/assets/102474982/7c7055e5-bc7a-4397-b5bb-d77467a67af6"/>
