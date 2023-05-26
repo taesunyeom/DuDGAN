@@ -9,7 +9,7 @@
 
 2. Python 3.7.x ~ 3.9.x
 
-3. Pytorch 1.8.0+cu111 (We do not sure it works on recent version. We recommend install previous version of Pytorch in "https://pytorch.org/get-started/previous-versions/")
+3. Pytorch 1.8.0+cu111 (We do not sure it works on recent version. We recommend install previous version of Pytorch in https://pytorch.org/get-started/previous-versions/)
 
 Libraries : 
 ```
@@ -20,6 +20,9 @@ Libraries :
 
 For class-conditional generation, you must need 'jsonl' file which describes the discrete class value for your dataset.
 Your '.jsonl' file in training dataset directory must be shaped like,
+```
+
+```
     
     
 
@@ -27,8 +30,22 @@ Your '.jsonl' file in training dataset directory must be shaped like,
 ### Training Process
 ---
 
-
-
-
-### Conditional Generation using Pretrained Network
+```
+```
+## Metrics
 ---
+
+```
+```
+
+### Image generation using Pretrained Network
+---
+
+
+
+### Citation
+---
+
+
+### Acknowledgement
+The code based on [StyleGAN2-ADA](https://github.com/NVlabs/stylegan2-ada-pytorch) and [Diffusion-GAN](https://github.com/Zhendong-Wang/Diffusion-GAN). Thanks for their amazing works!
