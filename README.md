@@ -18,16 +18,22 @@ Libraries :
 
 ### Preprocessing dataset
 
-For class-conditional generation, you must need 'jsonl' file which describes the discrete class value for your dataset.
-Your '.jsonl' file in training dataset directory must be shaped like,
+For class-conditional generation, you must need '.json' file which describes the discrete class value for your dataset.
+Your dataset configuration must be like,
 ```
  trainining_dataset_folder
     └── AAA (class name)
-           ├── BBB.jpg or .png (image) 
+           ├── aaa.jpg or .png (image) 
           ...
 ```
+You should make '.jsonl' file by enumerating images and discrete class labels.
 ```
-
+ trainining_dataset_folder
+    └── AAA (class name)
+    └── BBB
+    └── CCC
+    ...
+    └── '***.json' --> ["training_dataset_folder/AAA/aaa.jpg", #(class number)], ...
 ```
     
     
