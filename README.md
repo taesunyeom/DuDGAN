@@ -10,8 +10,8 @@
 3.Pytorch 1.8.0+cu111 (We do not sure it works on recent version. We recommend install previous version of Pytorch in "https://pytorch.org/get-started/previous-versions/")
 
 Libraries : 
-  pip install click requests tqdm pyspng ninja imageio-ffmpeg==0.4.3; 
 
+  pip install click requests tqdm pyspng ninja imageio-ffmpeg==0.4.3; 
 
 ### Preprocessing dataset
 
