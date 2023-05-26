@@ -40,21 +40,29 @@ You should make '.jsonl' file by enumerating images and discrete class labels.
 ---
 For class-conditional training of CIFAR-10,
 ```
-python train.py --outdir='outdir_name' --data='data_path' --gpus=1 --cfg cifar --kimg 10000 --aug no --target 0.6 --noise_sd 0.05 --ts_dist priority --cond=true --resume='network_path_for_resuming_training'
+python train.py --outdir='outdir_name' --data='data_path' --gpus=1 --cfg cifar --kimg 10000 --aug no 
+--target 0.6 --noise_sd 0.05 --ts_dist priority --cond=true --resume='network_path_for_resuming_training'
 ```
 For rest of the other dataset,
 ```
-python train.py --outdir='outdir_name' --data='data_path' --gpus=1 --cfg paper256 --kimg 10000 --aug no --target 0.6 --noise_sd 0.05 --ts_dist priority --cond=true --resume='network_path_for_resuming_training'
+python train.py --outdir='outdir_name' --data='data_path' --gpus=1 --cfg paper256 --kimg 10000 --aug no 
+--target 0.6 --noise_sd 0.05 --ts_dist priority --cond=true --resume='network_path_for_resuming_training'
 ```
 
 
 ### Generation
+```
+python generate.py --outdir='outdir_name' --seeds='select_seeds' --network='pretrained_network_path'
+```
+```
+python interpolation.py --outdir='outdir_name' --network='pretrained_network_path' # Random generation between class 
+```
 
 
 ## Calculating Metrics
 ---
 ```
-python calc_metrics.py --metrics=kid50k_full,pr50k3_full --data='data_path' --mirror=1 --network='network_path'
+python calc_metrics.py --metrics=kid50k_full,pr50k3_full --data='data_path' --mirror=1 --network='pretrained_network_path'
 ```
 
 
