@@ -1,10 +1,9 @@
-## DuDGAN: Improving Class-Conditional GANs via Dual-Diffusion 
+## DuDGAN: Improving Class-Conditional GANs via Dual-Diffusion  - Pytorch Implementation
 
 <img src="https://github.com/taesunyeom/DuDGAN/assets/102474982/7c7055e5-bc7a-4397-b5bb-d77467a67af6"/>
 
 
 ### Requirement
----
 1. one or more CUDA-available GPUs 
 
 2. Python 3.7.x ~ 3.9.x
@@ -37,7 +36,6 @@ You should make '.jsonl' file by enumerating images and discrete class labels.
 ```
 
 ### Training Process
----
 For class-conditional training of CIFAR-10,
 ```
 python train.py --outdir='outdir_name' --data='data_path' --gpus=1 --cfg cifar --kimg 10000 --aug no 
@@ -60,7 +58,6 @@ python interpolation.py --outdir='outdir_name' --network='pretrained_network_pat
 
 
 ## Calculating Metrics
----
 ```
 python calc_metrics.py --metrics=kid50k_full,pr50k3_full --data='data_path' --mirror=1 --network='pretrained_network_path'
 ```
@@ -68,7 +65,6 @@ python calc_metrics.py --metrics=kid50k_full,pr50k3_full --data='data_path' --mi
 
 
 ### Citation
----
 
 
 ### Acknowledgement
