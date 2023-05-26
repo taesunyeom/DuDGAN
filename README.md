@@ -25,7 +25,7 @@ Your dataset configuration must be like,
            ├── aaa.jpg or .png (image) 
           ...
 ```
-You should make '.jsonl' file by enumerating images and discrete class labels.
+You should make '.json' file by enumerating images and discrete class labels.
 ```
  trainining_dataset_folder
     └── AAA (class name)
