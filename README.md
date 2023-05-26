@@ -35,23 +35,27 @@ You should make '.jsonl' file by enumerating images and discrete class labels.
     ...
     └── '***.json' --> ["training_dataset_folder/AAA/aaa.jpg", #(class number)], ...
 ```
-    
-    
-
 
 ### Training Process
 ---
+For class-conditional training of CIFAR-10,
+```
+python train.py --outdir='outdir_name' --data='data_path' --gpus=1 --cfg cifar --kimg 10000 --aug no --target 0.6 --noise_sd 0.05 --ts_dist priority --cond=true --resume='network_path_for_resuming_training'
+```
+For rest of the other dataset,
+```
+python train.py --outdir='outdir_name' --data='data_path' --gpus=1 --cfg paper256 --kimg 10000 --aug no --target 0.6 --noise_sd 0.05 --ts_dist priority --cond=true --resume='network_path_for_resuming_training'
+```
 
-```
-```
-## Metrics
+
+### Generation
+
+
+## Calculating Metrics
 ---
-
 ```
+python calc_metrics.py --metrics=kid50k_full,pr50k3_full --data='data_path' --mirror=1 --network='network_path'
 ```
-
-### Image generation using Pretrained Network
----
 
 
 
