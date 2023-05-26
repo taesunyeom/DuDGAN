@@ -5,13 +5,12 @@
 
 ### Requirement
 ---
-1. one or more CUDA-available GPUs (recommend over than 24GB memory for 512x512)
+1. one or more CUDA-available GPUs 
 2.Python 3.7.x ~ 3.9.x
 3.Pytorch 1.8.0+cu111 (We do not sure it works on recent version. We recommend install previous version of Pytorch in "https://pytorch.org/get-started/previous-versions/")
 
 Libraries : 
-  
-  pip install pip install click requests tqdm pyspng ninja imageio-ffmpeg==0.4.3; 
+  pip install click requests tqdm pyspng ninja imageio-ffmpeg==0.4.3; 
 
 
 ### Preprocessing dataset
