@@ -10,7 +10,7 @@
 
 3. Pytorch 1.8.0+cu111 or version that fit to your enviornment. (We do not sure it works on recent version. We recommend install previous version of Pytorch in https://pytorch.org/get-started/previous-versions/)
 
-Libraries : 
+4. Required libraries : 
 ```
   pip install click requests tqdm pyspng ninja imageio-ffmpeg==0.4.3 
 ```
@@ -61,6 +61,8 @@ python interpolation.py --outdir='outdir_name' --network='pretrained_network_pat
 ```
 python calc_metrics.py --metrics=kid50k_full,pr50k3_full --data='data_path' --mirror=1 --network='pretrained_network_path'
 ```
+
+### Customizing dual-diffusion
 
 
 
