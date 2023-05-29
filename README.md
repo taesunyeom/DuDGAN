@@ -67,7 +67,14 @@ python calc_metrics.py --metrics=kid50k_full,pr50k3_full --data='data_path' --mi
 
 
 ### Citation
-
+```
+@article{yeom2023dudgan,
+  title={DuDGAN: Improving Class-Conditional GANs via Dual-Diffusion},
+  author={Yeom, Taesun and Lee, Minhyeok},
+  journal={arXiv preprint arXiv:2305.14849},
+  year={2023}
+}
+```
 
 ### Acknowledgement
 The code based on [StyleGAN2-ADA](https://github.com/NVlabs/stylegan2-ada-pytorch) and [Diffusion-GAN](https://github.com/Zhendong-Wang/Diffusion-GAN). Thanks for their amazing works!
