@@ -49,22 +49,25 @@ python train.py --outdir='outdir_name' --data='data_path' --gpus=1 --cfg paper25
 
 
 ### Generation
+Class-conditional generation using pretrained network.
 ```
 python generate.py --outdir='outdir_name' --seeds='select_seeds' --network='pretrained_network_path'
 ```
+
+Between-class interpolated generation (default setting is 'random_class to another_random_class')
 ```
 python interpolation.py --outdir='outdir_name' --network='pretrained_network_path' # Random generation between class 
 ```
 
 
-## Calculating Metrics
+### Calculating Metrics
 ```
 python calc_metrics.py --metrics=kid50k_full,pr50k3_full --data='data_path' --mirror=1 --network='pretrained_network_path'
 ```
 
 ### Customizing dual-diffusion
 
-
+work in progress...
 
 ### Citation
 ```
