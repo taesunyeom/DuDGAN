@@ -1,7 +1,9 @@
 ## DuDGAN: Improving Class-Conditional GANs via Dual-Diffusion  - Pytorch Implementation
 
 <img src="https://github.com/taesunyeom/DuDGAN/assets/102474982/7c7055e5-bc7a-4397-b5bb-d77467a67af6"/>
+
 ### Abstract
+
 Class-conditional image generation using generative adversarial networks (GANs) has been investigated through various techniques; however, it continues to face challenges such as mode collapse, training instability, and low-quality output in cases of datasets with high intra-class variation. Furthermore, most GANs often converge in larger iterations, resulting in poor iteration efficacy in training procedures. While Diffusion-GAN has shown potential in generating realistic samples, it has a critical limitation in generating class-conditional samples. To overcome these limitations, we propose a novel approach for class-conditional image generation using GANs called DuDGAN, which incorporates a dual diffusion-based noise injection process. Our method consists of three unique networks: a discriminator, a generator, and a classifier. During the training process, Gaussian-mixture noises are injected into the two noise-aware networks, the discriminator and the classifier, in distinct ways. This noisy data helps to prevent overfitting by gradually introducing more challenging tasks, leading to improved model performance. As a result, our method outperforms state-of-the-art conditional GAN models for image generation in terms of performance. We evaluated our method using the AFHQ, Food-101, and CIFAR-10 datasets and observed superior results across metrics such as FID, KID, Precision, and Recall score compared with comparison models, highlighting the effectiveness of our approach.
 
 ### Requirement
