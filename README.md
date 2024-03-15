@@ -63,10 +63,6 @@ python interpolation.py --outdir='outdir_name' --network='pretrained_network_pat
 python calc_metrics.py --metrics=kid50k_full,pr50k3_full --data='data_path' --mirror=1 --network='pretrained_network_path'
 ```
 
-### Customizing dual-diffusion
-
-work in progress...
-
 ### Citation
 ```
 @article{yeom2023dudgan,
