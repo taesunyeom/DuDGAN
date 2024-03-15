@@ -74,4 +74,4 @@ python calc_metrics.py --metrics=kid50k_full,pr50k3_full --data='data_path' --mi
 ```
 
 ### Acknowledgement
-The code based on [StyleGAN2-ADA](https://github.com/NVlabs/stylegan2-ada-pytorch) and [Diffusion-GAN](https://github.com/Zhendong-Wang/Diffusion-GAN). Thanks for their amazing works!
+The code based on [StyleGAN2-ADA](https://github.com/NVlabs/stylegan2-ada-pytorch) and [Diffusion-GAN](https://github.com/Zhendong-Wang/Diffusion-GAN).
